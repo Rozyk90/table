@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useEffect } from "react";
+import { useAppDispatch, useAppSelector } from "./redux/hooks";
+
+import { status as enumStatus } from "./enums";
+import { fetchUsers } from "./redux/slices/users";
+
+import { Loading } from "./components/other/other";
+import Filters from "./components/filters/filters";
+import Table from "./components/tabel/table";
+import { Failed } from "./components/other/other";
 
 function App() {
+  const { status } = useAppSelector((state) => state.users);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    if (status === enumStatus.idle) {
+      dispatch(fetchUsers());
+    }
+  }, [status, dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {(status === enumStatus.idle || status === enumStatus.loading) && (
+        <Loading />
+      )}
+      {status === enumStatus.succeeded && <Filters />}
+      {status === enumStatus.succeeded && <Table />}
+      {status === enumStatus.failed && <Failed />}
     </div>
   );
 }
