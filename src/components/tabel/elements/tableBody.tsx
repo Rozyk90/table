@@ -1,4 +1,4 @@
-import "../table.css";
+import "./tableBody.css";
 
 import { useAppSelector, useAppDispatch } from "../../../redux/hooks";
 
@@ -16,7 +16,7 @@ const TableBody = () => {
     (state) => state.filters
   );
 
-  // ==============================================================
+// ==============================================================
 
   const filterUsers = (user: User) => {
     const cleanPhone = (phone: string) => phone.replace(/\D/g, "");

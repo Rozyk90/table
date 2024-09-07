@@ -1,5 +1,5 @@
-import { useAppSelector } from "../../redux/hooks";
 import "./other.css";
+import { useAppSelector } from "../../redux/hooks";
 
 const Loading = () => {
   return <div className="loading" />;

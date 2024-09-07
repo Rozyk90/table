@@ -1,0 +1,29 @@
+.bodyContainer tr:nth-child(even) {
+  background: rgb(249, 186, 176);
+}
+
+.bodyContainer tr td {
+  height: 40px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.bodyContainer tr:hover td {
+  color: rgb(249, 117, 97);
+}
+
+@media (max-width: 800px) {
+  .bodyContainer tr td {
+    height: 30px;
+    padding: 0 5px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .bodyContainer tr td {
+    padding: 0 2px;
+    font-size: 0.55rem;
+  }
+}

@@ -1,7 +1,6 @@
 .loading {
   height: 150px;
   width: 150px;
-  margin: 300px auto;
   border: 30px dotted rgb(249, 186, 176);
   border-radius: 50%;
   animation: spin 4s ease-in-out infinite;
@@ -17,8 +16,6 @@
 }
 
 .failed {
-  width: 600px;
-  margin: 300px auto;
   color: rgb(249, 117, 97);
   font-size: 2.5rem;
   text-align: center;

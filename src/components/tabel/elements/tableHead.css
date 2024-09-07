@@ -1,0 +1,83 @@
+.headContainer {
+  height: 50px;
+  background: rgb(249, 117, 97);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.headContainer tr td {
+  padding: 0 10px;
+}
+
+.headContainer tr td button {
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mark,
+.reverseMark {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.mark {
+  border-bottom: 12px solid white;
+}
+
+.reverseMark {
+  border-top: 12px solid white;
+}
+
+@media (max-width: 800px) {
+  .headContainer {
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .headContainer tr td {
+    padding: 0 5px;
+  }
+
+  .headContainer tr td button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .headContainer {
+    font-size: 0.7rem;
+  }
+  .headContainer tr td {
+    padding: 0 2px;
+  }
+  .headContainer tr td button {
+    font-size: 0.7rem;
+  }
+
+  .mark,
+  .reverseMark {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+  }
+
+  .mark {
+    border-bottom: 8px solid white;
+  }
+
+  .reverseMark {
+    border-top: 8px solid white;
+  }
+}

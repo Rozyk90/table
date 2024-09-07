@@ -1,3 +1,37 @@
 * {
+  margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-height: 500px) {
+  body {
+    margin-top: 10%;
+  }
+}
+@media (max-height: 400px) {
+  body {
+    margin-top: 15%;
+  }
+}
+@media (max-height: 300px) {
+  body {
+    margin-top: 20%;
+  }
+}
+@media (max-height: 200px) {
+  body {
+    margin-top: 25%;
+  }
+}
+@media (max-height: 100px) {
+  body {
+    margin-top: 30%;
+  }
 }

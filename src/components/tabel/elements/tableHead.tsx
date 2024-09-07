@@ -1,4 +1,4 @@
-import "../table.css";
+import "./tableHead.css";
 import { useAppDispatch, useAppSelector } from "../../../redux/hooks";
 import { setSort } from "../../../redux/slices/sort";
 import { columns } from "../../../enums";

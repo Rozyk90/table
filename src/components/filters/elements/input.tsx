@@ -1,6 +1,5 @@
-import { columns } from "../../../enums";
+import "./input.css";
 import { useAppDispatch } from "../../../redux/hooks";
-import "../filters.css";
 
 const Input = ({
   placeholder,

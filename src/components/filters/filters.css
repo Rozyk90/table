@@ -1,7 +1,5 @@
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 300px auto 10px auto;
+  margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: bold;
   color: rgb(249, 117, 97);
@@ -9,30 +7,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 20px;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
-.input {
-  background: rgb(249, 186, 176);
-  border: 1px solid rgb(249, 117, 97);
-  border-radius: 12px;
-  box-sizing: border-box;
-  padding: 8px;
-  outline: none;
-  color: gray;
-  font-weight: bold;
-  transition: 0.5s;
-}
-
-.input:hover {
-  cursor: pointer;
-  scale: 1.1;
 }
 
 .container button {
@@ -49,4 +23,17 @@
 .container button:hover {
   cursor: pointer;
   scale: 1.1;
+}
+
+@media (max-width: 800px) {
+  .container {
+    font-size: 0.9rem;
+  }
+
+  .container button {
+    width: 60px;
+    border-radius: 9px;
+    height: 24px;
+    font-size: 0.7rem;
+  }
 }

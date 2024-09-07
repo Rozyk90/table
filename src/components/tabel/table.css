@@ -1,6 +1,5 @@
 .tableContainer {
-  width: 1200px;
-  margin: auto;
+  width: 100%;
   border: 2px solid rgb(249, 117, 97);
   border-radius: 10px;
   border-collapse: separate;
@@ -8,76 +7,4 @@
   color: rgb(73, 73, 73);
   overflow: hidden;
   display: table;
-}
-
-.headContainer {
-  height: 50px;
-  background: rgb(249, 117, 97);
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  text-align: left;
-}
-
-.headContainer tr td {
-  padding: 0 10px;
-}
-
-.headContainer tr td button {
-  padding: 0;
-  background: none;
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.mark,
-.reverseMark {
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-}
-
-.mark {
-  border-bottom: 14px solid white;
-}
-
-.reverseMark {
-  border-top: 14px solid white;
-}
-
-.bodyContainer tr:nth-child(even) {
-  background: rgb(249, 186, 176);
-}
-
-.bodyContainer tr td {
-  height: 40px;
-  padding: 0 10px;
-  font-weight: 600;
-  font-size: 0.8rem;
-}
-
-.bodyContainer tr:hover td {
-  color: rgb(249, 117, 97);
-}
-
-@media (max-width: 1200px) {
-  .tableContainer {
-    width: 90vw;
-  }
-
-  .bodyContainer tr td {
-    padding: 0 0px;
-    font-size: 0.6rem;
-  }
-
-  .bodyContainer tr {
-    height: auto;
-  }
 }
